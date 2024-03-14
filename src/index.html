@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.scss">
+    <title>Ryan Drew's CSS Library</title>
+</head>
+<body>
+    <h1 class="h1">Ryan Drew's Css Library</h1>
+    <p>Below is the CSS starting off point I use for my projects.</p>
+    <br />
+    <br />
+    <h2 class="h2">Headers</h2>
+    <p>I belive header tags should have no styling. The way a page should be laid out for SEO purposes doesn't always match the styling you're going for.</p>
+    <p>Instead, use classes .h1, .h2, etc to apply appropriate styling.</p>
+    <h1 class="h1">This is the .h1 class</h1>
+    <h2 class="h2">This is the .h2 class</h2>
+    <h3 class="h3">This is the .h3 class</h3>
+    <h4 class="h4">This is the .h4 class</h4>
+    <h5 class="h5">This is the .h5 class</h5>
+    <h6 class="h6">This is the .h6 class</h6>
+    <br />
+    <br />
+    <h2 class="h2">Cards</h2>
+    <div class="card">
+        <div class="card__title">This is a card title</div>
+        <div class="card__body">This is a card body</div>
+    </div>
+    <br />
+    <br />
+    <h2 class="h2">Colors</h2>
+    <h3 class="h3">There are a handful of default colors.</h3> | 
+    <span class="text-primary">text-primary</span> |
+    <span class="text-secondary">text-secondary</span> |
+    <span class="text-error">text-error</span> |
+    <span class="text-info">text-info</span> |
+    <span class="text-red">text-red</span> |
+    <span class="text-orange">text-orange</span> |
+    <span class="text-yellow">text-yellow</span> |
+    <span class="text-green">text-green</span> |
+    <span class="text-blue">text-blue</span> |
+    <span class="text-purple">text-purple</span> |
+    <span class="text-black">text-black</span> |
+    <span class="text-grey">text-grey</span> |
+    <span class="text-white bg-black">text-white</span>
+    <br />
+    <span class="bg-primary text-white">bg-primary</span> | 
+    <span class="bg-secondary text-white">bg-secondary</span> | 
+    <span class="bg-error text-white">bg-error</span> | 
+    <span class="bg-info text-white">bg-info</span> | 
+    <span class="bg-red text-white">bg-red</span> | 
+    <span class="bg-orange text-white">bg-orange</span> | 
+    <span class="bg-yellow text-white">bg-yellow</span> | 
+    <span class="bg-green text-white">bg-green</span> | 
+    <span class="bg-blue text-white">bg-blue</span> | 
+    <span class="bg-purple text-white">bg-purple</span> | 
+    <span class="bg-black text-white">bg-black</span> | 
+    <span class="bg-grey text-white">bg-grey</span> | 
+    <span class="bg-white text-black">bg-white</span>
+    <br />
+    <br />
+    <h3 class="h3">Each color has multiple shades.</h3>
+    <h4 class="h4">You can access these shades by using the modifier: "--light-1" through "--light-9" or "--dark-1" through "--dark-9".</h4>
+    <span class="bg-primary text-white">bg-primary</span> | 
+    <span class="bg-primary--light-1 text-white">bg-primary--light-1</span> | 
+    <span class="bg-primary--light-2 text-white">bg-primary--light-2</span> | 
+    <span class="bg-primary--light-3 text-white">bg-primary--light-3</span> | 
+    <span class="bg-primary--light-4 text-white">bg-primary--light-4</span> | 
+    <span class="bg-primary--light-5 text-white">bg-primary--light-5</span> | 
+    <span class="bg-primary--light-6 text-white">bg-primary--light-6</span> | 
+    <span class="bg-primary--light-7 text-white">bg-primary--light-7</span> | 
+    <span class="bg-primary--light-8 text-white">bg-primary--light-8</span> | 
+    <span class="bg-primary--light-9 text-white">bg-primary--light-9</span>
+    <br />
+    <span class="bg-primary text-white">bg-primary</span> | 
+    <span class="bg-primary--dark-1 text-white">bg-primary--dark-1</span> | 
+    <span class="bg-primary--dark-2 text-white">bg-primary--dark-2</span> | 
+    <span class="bg-primary--dark-3 text-white">bg-primary--dark-3</span> | 
+    <span class="bg-primary--dark-4 text-white">bg-primary--dark-4</span> | 
+    <span class="bg-primary--dark-5 text-white">bg-primary--dark-5</span> | 
+    <span class="bg-primary--dark-6 text-white">bg-primary--dark-6</span> | 
+    <span class="bg-primary--dark-7 text-white">bg-primary--dark-7</span> | 
+    <span class="bg-primary--dark-8 text-white">bg-primary--dark-8</span> | 
+    <span class="bg-primary--dark-9 text-white">bg-primary--dark-9</span>
+    <br />
+    <br />
+    <h3 class="h3">You can change the color of text on hover.</h3>
+    <span class="text-hover-primary">text-hover-primary</span> | 
+    <span class="text-hover-secondary">text-hover-secondary</span> | 
+    <span class="text-hover-error">text-hover-error</span> | 
+    <span class="text-hover-info">text-hover-info</span> | 
+    <span class="text-hover-red">text-hover-red</span> | 
+    <span class="text-hover-orange">text-hover-orange</span> | 
+    <span class="text-hover-yellow">text-hover-yellow</span> | 
+    <span class="text-hover-green">text-hover-green</span> | 
+    <span class="text-hover-blue">text-hover-blue</span> | 
+    <span class="text-hover-purple">text-hover-purple</span> | 
+    <span class="text-hover-black text-grey">text-hover-black</span> | 
+    <span class="text-hover-grey">text-hover-grey</span> | 
+    <span class="text-hover-white">text-hover-white</span>
+    <br />
+    <br />
+    <h3 class="h3">You can also do this for light and dark variations.</h3>
+    <span class="text-hover-primary">text-hover-primary</span> | 
+    <span class="text-hover-primary--light-1">text-hover-primary--light-1</span> | 
+    <span class="text-hover-primary--light-2">text-hover-primary--light-2</span> | 
+    <span class="text-hover-primary--light-3">text-hover-primary--light-3</span> | 
+    <span class="text-hover-primary--light-4">text-hover-primary--light-4</span> | 
+    <span class="text-hover-primary--light-5">text-hover-primary--light-5</span> | 
+    <span class="text-hover-primary--light-6">text-hover-primary--light-6</span> | 
+    <span class="text-hover-primary--light-7">text-hover-primary--light-7</span> | 
+    <span class="text-hover-primary--light-8">text-hover-primary--light-8</span> | 
+    <span class="text-hover-primary--light-9">text-hover-primary--light-9</span>
+    <br />
+    <br />
+    <span class="text-hover-primary">text-hover-primary</span> | 
+    <span class="text-hover-primary--dark-1">text-hover-primary--dark-1</span> | 
+    <span class="text-hover-primary--dark-2">text-hover-primary--dark-2</span> | 
+    <span class="text-hover-primary--dark-3">text-hover-primary--dark-3</span> | 
+    <span class="text-hover-primary--dark-4">text-hover-primary--dark-4</span> | 
+    <span class="text-hover-primary--dark-5">text-hover-primary--dark-5</span> | 
+    <span class="text-hover-primary--dark-6">text-hover-primary--dark-6</span> | 
+    <span class="text-hover-primary--dark-7">text-hover-primary--dark-7</span> | 
+    <span class="text-hover-primary--dark-8">text-hover-primary--dark-8</span> | 
+    <span class="text-hover-primary--dark-9">text-hover-primary--dark-9</span>
+
+    <!--Buttons-->
+    <h2 class="h2">Buttons</h2>
+    <h3>Here are the default buttons.</h3>
+    <button class="btn text-black">.btn</button>
+    <button class="btn-primary text-white">.btn-primary</button>
+    <button class="btn-secondary text-white">.btn-secondary</button>
+    <button class="btn-error text-white">.btn-error</button>
+    <button class="btn-info text-white">.btn-info</button>
+    <button class="btn-red text-white">.btn-red</button>
+    <button class="btn-orange text-white">.btn-orange</button>
+    <button class="btn-yellow text-black">.btn-yellow</button>
+    <button class="btn-green text-white">.btn-green</button>
+    <button class="btn-blue text-white">.btn-blue</button>
+    <button class="btn-purple text-white">.btn-purple</button>
+    <button class="btn-black text-white">.btn-black</button>
+    <button class="btn-grey text-white">.btn-grey</button>
+    <button class="btn-white text-black">.btn-white</button>
+    <br />
+    <button class="btn-outlined text-black">.btn-outlined</button>
+    <button class="btn-outlined-primary text-black">.btn-outlined-primary</button>
+    <button class="btn-outlined-secondary text-black">.btn-outlined-secondary</button>
+    <button class="btn-outlined-error text-black">.btn-outlined-error</button>
+    <button class="btn-outlined-info text-black">.btn-outlined-info</button>
+    <button class="btn-outlined-red text-black">.btn-outlined-red</button>
+    <button class="btn-outlined-orange text-black">.btn-outlined-orange</button>
+    <button class="btn-outlined-yellow text-black">.btn-outlined-yellow</button>
+    <button class="btn-outlined-green text-black">.btn-outlined-green</button>
+    <button class="btn-outlined-blue text-black">.btn-outlined-blue</button>
+    <button class="btn-outlined-purple text-black">.btn-outlined-purple</button>
+    <button class="btn-outlined-black text-black">.btn-outlined-black</button>
+    <button class="btn-outlined-grey text-black">.btn-outlined-grey</button>
+    <button class="btn-outlined-white text-black">.btn-outlined-white</button>
+    <br />
+    <button class="btn-complement">.btn-complement</button>
+    <button class="btn-complement-primary">.btn-complement-primary</button>
+    <button class="btn-complement-secondary">.btn-complement-secondary</button>
+    <button class="btn-complement-error">.btn-complement-error</button>
+    <button class="btn-complement-info">.btn-complement-info</button>
+    <button class="btn-complement-red">.btn-complement-red</button>
+    <button class="btn-complement-orange">.btn-complement-orange</button>
+    <button class="btn-complement-yellow">.btn-complement-yellow</button>
+    <button class="btn-complement-green">.btn-complement-green</button>
+    <button class="btn-complement-blue">.btn-complement-blue</button>
+    <button class="btn-complement-purple">.btn-complement-purple</button>
+    <button class="btn-complement-black">.btn-complement-black</button>
+    <button class="btn-complement-grey">.btn-complement-grey</button>
+    <button class="btn-complement-white">.btn-complement-white</button>
+</body>
+</html>

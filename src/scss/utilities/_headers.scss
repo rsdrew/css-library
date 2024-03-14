@@ -1,0 +1,26 @@
+@use "../variables/" as *;
+@use "sass:math";
+
+.h1 {
+    font-size: $base-font-size * (math.pow($font-scale, 5));
+}
+
+.h2 {
+    font-size: $base-font-size * (math.pow($font-scale, 4));
+}
+
+.h3 {
+    font-size: $base-font-size * (math.pow($font-scale, 3));
+}
+
+.h4 {
+    font-size: $base-font-size * (math.pow($font-scale, 2));
+}
+
+.h5 {
+    font-size: $base-font-size * (math.pow($font-scale, 1));
+}
+
+.h6 {
+    font-size: $base-font-size * (math.pow($font-scale, 0));
+}
